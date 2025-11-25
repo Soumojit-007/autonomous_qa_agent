@@ -1,61 +1,12 @@
-# -------------------------
-# ENVIRONMENT VARIABLES
-# -------------------------
 .env
-.env.local
 .env.*
+*.env
 
-
-# -------------------------
-# PYTHON CACHE & BUILD FILES
-# -------------------------
-__pycache__/
-*.py[cod]
-*.egg
-*.egg-info/
-*.egg-info
-dist/
-build/
-pip-wheel-metadata/
-
-
-# -------------------------
-# CHROMADB / VECTOR STORE
-# -------------------------
-chromadb/
 vector_store/
-*.sqlite
+chromadb/
 *.db
-*.pickle
-*.bin
-*.pt
+*.sqlite
 
-
-# -------------------------
-# VSCODE CONFIG
-# -------------------------
+__pycache__/
 .vscode/
-*.code-workspace
-
-
-# -------------------------
-# STREAMLIT CACHE
-# -------------------------
 .streamlit/
-.streamlit_cache/
-**/.streamlit/
-
-
-# -------------------------
-# LOG FILES
-# -------------------------
-*.log
-logs/
-*.txt
-
-
-# -------------------------
-# ANY GENERATED SCRIPTS
-# -------------------------
-generated_scripts/
-selenium_output/

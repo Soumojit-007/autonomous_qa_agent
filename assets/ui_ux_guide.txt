@@ -1,0 +1,7 @@
+UI/UX Guidelines:
+
+- Error messages should be displayed in red below the corresponding input field.
+- The "Pay Now" button must be green and clearly visible.
+- The discount input box must be on top of the checkout form.
+- Form fields must validate mandatory inputs: name, email, and shipping selection.
+- Buttons should have hover effects and visible constraints for disabled states.

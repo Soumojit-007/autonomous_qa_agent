@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Shop Checkout</title>
+  <style>
+    .error { color: red; }
+    #pay-now {
+        background-color: green;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+
+<h2>E-Shop Checkout</h2>
+
+<div>
+  <input id="discount-code" placeholder="Enter Code">
+  <button id="apply-btn" type="button">Apply</button>
+</div>
+
+<form id="user-form">
+  
+  <input id="name" name="name" required placeholder="Name">
+  <br><br>
+
+  <input id="email" name="email" required type="email" placeholder="Email">
+  <br><br>
+
+  <input id="address" name="address" required placeholder="Address">
+  <br><br>
+
+  <fieldset>
+    <legend>Shipping Method</legend>
+    <label><input type="radio" name="shipping" value="standard" required> Standard</label>
+    <label><input type="radio" name="shipping" value="express"> Express</label>
+  </fieldset>
+
+  <br>
+
+  <fieldset>
+    <legend>Payment Method</legend>
+    <label><input type="radio" name="payment" value="card" required> Credit Card</label>
+    <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+  </fieldset>
+
+  <br>
+
+  <button id="pay-now" type="submit">Pay Now</button>
+</form>
+
+<script>
+  document.getElementById("user-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Payment Successful!");
+  });
+</script>
+
+</body>
+</html>
